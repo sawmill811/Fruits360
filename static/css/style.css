@@ -1,0 +1,187 @@
+/* html {
+    cursor: url("images/banana1.png"), auto;
+} */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: right;
+    background: rgb(22,123,183);
+    background: -moz-linear-gradient(180deg, rgba(22,123,183,1) 0%, rgba(22,180,183,1) 56%, rgba(189,253,45,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(22,123,183,1) 0%, rgba(22,180,183,1) 56%, rgba(189,253,45,1) 100%);
+    background: linear-gradient(180deg, rgba(22,123,183,1) 0%, rgba(22,180,183,1) 56%, rgba(189,253,45,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#167bb7",endColorstr="#bdfd2d",GradientType=1);
+    /* overflow-x: hidden; */
+    /* border: 2px solid blue;     */
+}
+
+.container {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red;   */
+}
+
+@media (orientation: portrait) {
+    .container {
+        justify-content: space-around;
+    }
+}
+
+.title {
+    font-size: min(max(4em,8vh), 5vw);
+    font-family: 'Josefin Sans', sans-serif;
+    color: #292C6D;
+    /* border: 2px solid blue; */
+}
+
+.t360 {
+    font-size: min(max(4em,8vh), 5vw);
+    font-family: 'Josefin Sans', sans-serif;
+    color: #95CD41;
+}
+
+@media (orientation: portrait) {
+    .title {
+        font-size: 15vw;
+    }
+}
+
+.form {
+    width: max(300px,40%);
+    height: min(max(200px,16vh),30vh);
+    display: flex;
+    justify-content: center;
+    background: rgba(223, 223, 222,0.7);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-family: "Heebo", sans-serif;
+    margin: 0;
+    padding-top: 20px;
+    /* align-items: space-around; */
+    /* justify-content: center; */
+}
+
+@media (orientation: portrait) {
+    .form {
+        width: 90%;
+        height: 50%;
+    }
+}
+
+.input {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid blue; */
+}
+
+/* #img {
+    cursor: url("images/banana1.png"), auto;
+}
+
+.file-upload:hover {
+    cursor: url("images/banana2.png"), auto;
+} */
+
+.submit-btn {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.4em;
+    font-size: min(0.8em, 1.6vw);
+    text-align: center;
+    border-radius: 10px;
+    font-family: "Heebo", sans-serif;
+    transition: all 0.2s ease;
+}
+
+.submit-btn:hover {
+    /* cursor: url("images/banana2.png"), auto; */
+
+    transform: scale(1.05);
+}
+
+@media (orientation: portrait) {
+    .submit-btn {
+        width: fit-content;
+        height: fit-content;
+        font-size: 1em;
+        padding: 0.2em;
+    }
+}
+
+.details {
+    font-size: min(0.7em, 1.6vw);
+    font-family: 'Hind', sans-serif;
+    background: rgba(223, 223, 222, 0.7);
+    width: max(300px,40%);
+    height: 5vh;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-bottom: 20px;
+}
+
+@media (orientation: portrait) {
+    .details {
+        width: 90%;
+        font-size: 0.8em;
+    }
+}
+
+.img-predicted {
+    width: max(300px,40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    background: rgba(223, 223, 222, 0.7);
+    padding-bottom: 20px;
+}
+
+.image-display {
+    width: min(200px,60%);
+}
+
+.prediction {
+    text-align: center;
+    width: max(300px,40%);
+    background: rgba(223, 223, 222, 0.7);
+    font-family: "Heebo", sans-serif;
+    padding-bottom: 20px;
+}
+
+@media (orientation: portrait) {
+    .prediction, .img-predicted {
+        width: 90%;
+        font-size: 1.2em;
+        text-decoration: underline;
+    }
+}

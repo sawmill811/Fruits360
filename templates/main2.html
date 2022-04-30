@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits360</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Hind:wght@500&family=Josefin+Sans&family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title"><a href="/">Fruits<span class="t360">360</span></a></h1>
+        <!-- form to enter URL as input -->
+        <div class="form">
+            <form action="/prediction" method = "POST" class="input" enctype="multipart/form-data">
+                <div class="img-upload">
+                    <span class="txt-instruction">Select image:</span><br>
+                    <span class="file-upload"><input type="file" id="img" name="img" accept="image/*"></span>
+                </div> 
+                <p><input type = "submit" value = "Predict this fruit!" class="submit-btn" ></p>
+            </form>
+        </div>
+        <!-- Fruit Prediction is displayed here -->
+        <div class="img-predicted"><img src="{{predImage}}" alt="" class="image-display"></div>
+        <a href = "https://www.google.com/search?q={{data}}" target="_blank" class="prediction" id="pred">{{data}}</a>
+        <div class="details">Developed by <a href="https://sawmill811.github.io">Soumil Sinha</a> & <a href="https://github.com/Ishaanshri95">Ishaan Shrivastava</a></div>
+    </div>
+</body>
+<script src="static/js/script.js"></script>
+</html>
