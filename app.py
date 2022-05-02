@@ -2,20 +2,13 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 
 # Imports
 import os
-from flask import Flask, flash, request, redirect, url_for, render_template
+from flask import Flask, request, render_template
 from werkzeug.utils import secure_filename
-import bz2
 
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'webp'}
 
-from sklearn.ensemble import RandomForestClassifier
-import cv2
-import matplotlib.pyplot as plt
-import pickle
-import _pickle as cPickle
 import numpy as np
 from PIL import Image
-import blosc
 import keras
 
 
