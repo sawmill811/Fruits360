@@ -7,7 +7,7 @@ The dataset we used is called Fruits360 - a dataset with 90380 images of 131 fru
 
 ## Pipeline
 Our task in this project was to build an end-to-end pipeline to classify the fruits and vegetables in the dataset. Our pipeline has the following functionalities:
-* Loads pretrained model from GitHub
+* Loads pretrained **VGG16** model
 * Loads given image and processes it
 * Predicts the class of given image
 
@@ -25,10 +25,13 @@ You must have the following packages installed in your working environment:
 * `tensorflow==2.8.0`
 
 Next, Use `git clone https://github.com/sawmill811/Fruits360.git` in your terminal to clone the repository.
-<br>
+<br><br>
 Type `flask run` in your terminal and go to http://localhost:5000/ to see the website. Ignore the TensorFlow warnings, if any. You should be able to see something like this:
 <br>
-<img src="https://user-images.githubusercontent.com/90380/84598981-f9c8c580-f9c9-11ea-9c0c-e9f9c8d8f8b9.png" alt="Fruits360" width="500">
+<img src="website-thumbnail.PNG" alt="Fruits360" width="80%">
+<br><br>
+Choose the image you want to predict and click on the <u>Predict</u> button. You should see the image along with the model’s prediction.<br>
+<img src="website-thumbnail2.PNG" alt="Fruits360" width="80%">
 
 
 
