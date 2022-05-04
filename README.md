@@ -12,7 +12,7 @@ Our task in this project was to build an end-to-end pipeline to classify the fru
 * Predicts the class of given image
 
 The pipeline has 7 methods – 2 public and 5 private. We can print the summary of the pipeline model using the summary() method. We can make predictions using the predict(image_path) method. While making a prediction, the input image is shown along with the model’s prediction.
-We also integrated this Pipeline in the website that we built for this project. The website could not be deployed because of limited hosting resources.
+We also integrated this Pipeline in the website that we built for this project.
 
 ## Running the pipeline
 ### Prerequisites
